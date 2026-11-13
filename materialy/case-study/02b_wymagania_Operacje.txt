@@ -1,0 +1,31 @@
+Wymagania Operacji: Baza wiedzy
+Tomasz Zieliński, Dyrektor Operacji
+9 października 2026, pisane w przerwie między zmianami
+
+Będę konkretny, bo nie mam czasu na tomy.
+
+Co chcemy
+Instrukcje stanowiskowe, standardy pracy, procedury awaryjne i krótkie „jak zrobić X na maszynie Y". Mamy tego około 1400 dokumentów w PDF-ach i dużo w wersji papierowej przypiętej na hali. Ile z tego jest aktualne, nikt nie wie, ale zakładam, że większość. Migrujemy wszystko.
+
+Kiedy
+Do końca listopada. To daje nam dwa miesiące od kickoffu i to jest realne, jeśli nie będziemy tego komplikować. Dłużej nie ma sensu, bo w grudniu mamy inwentaryzację i przestoje planowe, a od stycznia nikt nie będzie miał głowy do nowych narzędzi. Pilot u nas w Gliwicach, jestem gotowy dać ludzi.
+
+Jak ma działać
+- Dostęp z tabletów na hali. Mamy tam kilka tabletów przy liniach, używanych wspólnie przez całą zmianę. Ludzie nie będą się logować swoim kontem na każdej zmianie, to musi być „kliknij i czytaj".
+- Wyszukiwanie po nazwie maszyny albo po kodzie. Proste.
+- Mistrzowie zmian mają móc sami poprawiać instrukcje od razu, gdy coś się zmieni w procesie. Nie będziemy czekać tygodnia na czyjeś zatwierdzenie, bo na hali błąd w instrukcji to nie literówka.
+- Wersje instrukcji i informacja, kto ostatni zmieniał.
+
+Kto pilnuje treści
+Mistrzowie zmian oczywiście. Choć oni mają swoje zadania, więc trzeba to jakoś ogarnąć bez zabierania ich z linii. Jeśli ktoś ma pomysł, kto ma to robić na co dzień, to chętnie posłucham.
+
+Sukces
+Żeby ludzie na hali z tego korzystali i żeby było mniej pytań do mistrzów i do jakości. Zobaczymy po pierwszych tygodniach, czy działa.
+
+Jeszcze nie wiem / do ustalenia
+- Czy skanujemy te papierowe instrukcje z hali. Chyba to nie jest temat tego projektu, ale ktoś musi to zrobić, inaczej wszystko będzie niepełne.
+- Czy trzeba dostęp offline, bo na hali w hali C zasięg wifi bywa różny.
+- Co z instrukcjami po niemiecku od dostawcy maszyn.
+
+Reszta to szczegóły dla IT.
+Tomek

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ćwiczenia · Copilot w pracy PM-a</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="course.js" defer></script>
+  <script src="warsztat-notatki.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#dlugopis" aria-current="page">Przejdź do treści warsztatu</a>
+<header class="course-header">
+  <div class="wrap">
+    <a href="index.html">ArcelorMittal</a>
+    <nav class="header-nav" aria-label="Menu">
+      <a class="header-link" href="index.html#program">Program</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap layout">
+  <nav class="index" aria-labelledby="spis">
+    <h2 id="spis">Ścieżka warsztatu</h2>
+    <ol>
+      <li><a href="warsztat.html#wstep"><span>00</span><span>Wstęp o LLM-ach</span></a></li>
+      <li><a href="warsztat-przygotowanie.html#przygotowanie"><span>00a</span><span>Przygotowanie</span></a></li>
+      <li><a href="warsztat-zakres.html#zakres"><span>01</span><span>Zakres pilota</span></a></li>
+      <li><a href="warsztat-zrodla.html#zrodla"><span>02</span><span>Weryfikacja źródła</span></a></li>
+      <li><a href="warsztat-premortem.html#premortem"><span>03</span><span>Pre-mortem</span></a></li>
+      <li><a href="warsztat-dashboard.html#dashboard"><span>04</span><span>Test dashboardu</span></a></li>
+      <li><a href="warsztat-dlugopis.html#dlugopis"><span>05</span><span>Czerwony długopis</span></a></li>
+      <li><a href="warsztat-dostawca.html#dostawca"><span>06</span><span>Aktualizacja projektu</span></a></li>
+      <li><a href="warsztat-sponsor.html#sponsor"><span>07</span><span>Komunikacja dla sponsora</span></a></li>
+      <li><a href="warsztat-podsumowanie.html#podsumowanie"><span>08</span><span>Podsumowanie</span></a></li>
+    </ol>
+  </nav>
+  <main>
+    <section class="module" id="dlugopis" aria-labelledby="dlugopis-tytul">
+      <p class="eyebrow">05 · 12:25–12:40 · gra po lunchu</p>
+      <h2 id="dlugopis-tytul">Czerwony długopis</h2>
+      <p class="intro">Copilot przygotował roboczy status projektu. Wygląda profesjonalnie, ale zawiera sześć błędów merytorycznych. Znajdź je szybciej niż inni, a potem sprawdź, ile znajdzie Copilot.</p>
+<details class="disclosure case-file" id="warsztat-status">
+  <summary>Status do sprawdzenia</summary>
+  <div class="disclosure-body">
+    <div class="actions">
+      <button class="button" type="button" data-copy="warsztat-status-tekst" aria-label="Kopiuj treść — Status do sprawdzenia" hidden>Kopiuj treść</button>
+      <a class="button" href="materialy/case-study/09_status_do_sprawdzenia.txt" download>Pobierz TXT</a>
+    </div>
+    <pre tabindex="0" aria-label="Status do sprawdzenia"><code id="warsztat-status-tekst">STATUS PROJEKTU „BAZA WIEDZY NORDSTEEL”, wersja robocza przygotowana przez Copilota
+Stan na: 31 października 2026
+Status ogólny: zielony
+
+Najważniejsze ustalenia
+1. KnowHub został wskazany jako dostawca wiodący. Formalny wybór do 30.10 (kamień milowy M2).
+2. Zgodnie z decyzją z kickoffu pilot obejmie HR, Operacje Gliwice oraz Finanse, łącznie ok. 450 osób.
+3. Budżet wdrożenia w wysokości 400 tys. zł został potwierdzony przez Finanse.
+4. Oferta wstępna KnowHub: 28 zł za użytkownika miesięcznie.
+5. Logowanie przez SSO zostanie dołączone w drugiej fazie, po zakończeniu pilota.
+6. Operacje zaakceptowały harmonogram migracji do kwietnia 2027.
+7. Gliwice wskażą trzech mistrzów zmian do przeglądu instrukcji.
+
+Działania
+- Zebranie ofert od dwóch pozostałych dostawców: PM, do 29.10.
+- Lista materiałów onboardingowych do pilota: Marek Nowak, do 6.11.
+- Konfiguracja i test SSO z Azure AD: Katarzyna Wójcik, do 6.11.
+- Prezentacja na SteerCo 12.11: PM, wersja robocza do Anny do 9.11.
+
+Następny krok: przedstawienie postępów na Steering Committee 12 listopada.
+</code></pre>
+  </div>
+</details>
+      <div class="actions">
+        <a class="button" href="materialy/case-study/03_notatka_ze_spotkania.txt" download>Notatka z kickoffu · TXT</a>
+        <a class="button" href="materialy/case-study/02b_wymagania_Operacje.txt" download>Operacje · TXT</a>
+        <a class="button" href="materialy/case-study/02c_wymagania_IT.txt" download>IT · TXT</a>
+      </div>
+      <ol>
+        <li><strong>6 min, bez Copilota.</strong> Porównaj status z notatką z kickoffu i wymaganiami. Wpisz na czacie spotkania liczbę znalezionych błędów, gdy skończysz.</li>
+        <li><strong>4 min, z Copilotem.</strong> Napisz polecenie, w którym Copilot sprawdzi status ze źródłami. Porównaj jego listę ze swoją. Co znalazł, co przeoczył, a co oznaczył niesłusznie?</li>
+        <li><strong>5 min, omówienie.</strong> Trener omawia błędy na forum. Zapisz, który błąd był najtrudniejszy do wychwycenia i dlaczego.</li>
+      </ol>
+      <details class="disclosure prompt" id="prompt-dlugopis">
+        <summary>Podpowiedź · otwórz, jeśli utkniesz</summary>
+        <div class="disclosure-body">
+          <div class="code-head"><strong>Prompt</strong><button class="button" type="button" data-copy="prompt-dlugopis-tekst" aria-label="Kopiuj prompt — Prompt kontrolny · status a źródła" hidden>Kopiuj</button></div>
+          <pre tabindex="0" aria-label="Prompt kontrolny · status a źródła"><code id="prompt-dlugopis-tekst">Porównaj poniższy status projektu z dołączonymi źródłami. Wypisz każde zdanie, które jest sprzeczne ze źródłami albo nie ma w nich potwierdzenia. Dla każdego podaj cytat ze źródła albo napisz „brak w źródłach”. Nie poprawiaj stylu i nie oceniaj formy, sprawdzaj tylko fakty.
+
+Status do sprawdzenia:
+[wklej status]
+
+Źródła:
+[dołącz notatkę z kickoffu, wymagania IT i wymagania Operacji]</code></pre>
+        </div>
+      </details>
+      <details class="disclosure handout">
+        <summary>Dla szybszych · błąd w twojej poprawce</summary>
+        <div class="disclosure-body"><p>Napisz poprawioną wersję statusu w pięciu zdaniach. Poproś Copilota w nowym czacie o sprawdzenie jej ze źródłami. Jeśli nie znajdzie błędu, poproś o wskazanie zdania najsłabiej podpartego źródłem.</p></div>
+      </details>
+      <div class="participant-notes">
+  <label for="notatka-dlugopis">Twoje notatki</label>
+  <p id="pomoc-dlugopis">Znalezione błędy, to, co przeoczył Copilot, i najtrudniejszy błąd.</p>
+  <textarea id="notatka-dlugopis" data-workshop-note="dlugopis" aria-describedby="pomoc-dlugopis" rows="6"></textarea>
+</div>
+    <div class="notes-backup" hidden>
+        <p role="alert">Notatki nie mogą być zapisywane w tej przeglądarce. Przed przejściem dalej pobierz plik z tym, co wpisano na tej stronie.</p>
+        <button class="button" type="button" id="export-warsztat">Pobierz notatki i materiały · JSON</button>
+        <p id="notes-status" role="status" aria-live="polite"></p>
+      </div>
+    <nav class="pager" aria-label="Nawigacja po warsztacie"><a class="button" href="warsztat-dashboard.html#dashboard">← Test dashboardu</a><a class="button primary" href="warsztat-dostawca.html#dostawca">Aktualizacja projektu →</a></nav>
+    </section>
+  </main>
+</div>
+<p class="copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+</body>
+</html>

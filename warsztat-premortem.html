@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ćwiczenia · Copilot w pracy PM-a</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="course.js" defer></script>
+  <script src="warsztat-notatki.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#premortem" aria-current="page">Przejdź do treści warsztatu</a>
+<header class="course-header">
+  <div class="wrap">
+    <a href="index.html">ArcelorMittal</a>
+    <nav class="header-nav" aria-label="Menu">
+      <a class="header-link" href="index.html#program">Program</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap layout">
+  <nav class="index" aria-labelledby="spis">
+    <h2 id="spis">Ścieżka warsztatu</h2>
+    <ol>
+      <li><a href="warsztat.html#wstep"><span>00</span><span>Wstęp o LLM-ach</span></a></li>
+      <li><a href="warsztat-przygotowanie.html#przygotowanie"><span>00a</span><span>Przygotowanie</span></a></li>
+      <li><a href="warsztat-zakres.html#zakres"><span>01</span><span>Zakres pilota</span></a></li>
+      <li><a href="warsztat-zrodla.html#zrodla"><span>02</span><span>Weryfikacja źródła</span></a></li>
+      <li><a href="warsztat-premortem.html#premortem"><span>03</span><span>Pre-mortem</span></a></li>
+      <li><a href="warsztat-dashboard.html#dashboard"><span>04</span><span>Test dashboardu</span></a></li>
+      <li><a href="warsztat-dlugopis.html#dlugopis"><span>05</span><span>Czerwony długopis</span></a></li>
+      <li><a href="warsztat-dostawca.html#dostawca"><span>06</span><span>Aktualizacja projektu</span></a></li>
+      <li><a href="warsztat-sponsor.html#sponsor"><span>07</span><span>Komunikacja dla sponsora</span></a></li>
+      <li><a href="warsztat-podsumowanie.html#podsumowanie"><span>08</span><span>Podsumowanie</span></a></li>
+    </ol>
+  </nav>
+  <main>
+    <section class="module" id="premortem" aria-labelledby="premortem-tytul">
+      <p class="eyebrow">03 · 11:15–11:35 · samodzielnie</p>
+      <h2 id="premortem-tytul">Pre-mortem pilota</h2>
+      <p class="intro">Jest kwiecień 2027 i pilot się nie udał. Zamiast pytać, co może pójść źle, poproś Copilota o wyjaśnienie, dlaczego już poszło źle. Potem oddziel ryzyka oparte na źródłach od ogólników.</p>
+      <div class="actions">
+        <a class="button" href="materialy/case-study/01_brief_od_sponsora.txt" download>Brief · TXT</a>
+        <a class="button" href="materialy/case-study/02a_wymagania_HR.txt" download>HR · TXT</a>
+        <a class="button" href="materialy/case-study/02b_wymagania_Operacje.txt" download>Operacje · TXT</a>
+        <a class="button" href="materialy/case-study/02c_wymagania_IT.txt" download>IT · TXT</a>
+        <a class="button" href="materialy/case-study/03_notatka_ze_spotkania.txt" download>Notatka z kickoffu · TXT</a>
+      </div>
+      <ol>
+        <li>Wyślij prompt z materiałami projektu i swoimi notatkami z ćwiczenia 01.</li>
+        <li>Sprawdź samodzielnie każdy punkt. Czy cytat rzeczywiście jest w źródle? Czy punkt oznaczony jako oparty na źródle nie jest w rzeczywistości domysłem?</li>
+        <li>Wybierz trzy najgroźniejsze przyczyny. Każdej dopisz wczesny sygnał i osobę, która powinna zareagować. Możesz użyć promptu krytycznego.</li>
+        <li>Wpisz na czat spotkania swoją najgroźniejszą przyczynę. Porównaj ją z wpisami innych i zaznacz w notatkach jedną przyczynę, której nie było w Twoich notatkach z ćwiczenia 01.</li>
+      </ol>
+      <details class="disclosure prompt" id="prompt-premortem">
+        <summary>Prompt · pre-mortem pilota</summary>
+        <div class="disclosure-body">
+          <div class="code-head"><strong>Prompt</strong><button class="button" type="button" data-copy="prompt-premortem-tekst" aria-label="Kopiuj prompt — Prompt · pre-mortem pilota" hidden>Kopiuj</button></div>
+          <pre tabindex="0" aria-label="Prompt · pre-mortem pilota"><code id="prompt-premortem-tekst">Jest 30 kwietnia 2027. Pilot bazy wiedzy Nordsteel (HR i Operacje Gliwice, ok. 300 osób) zakończył się porażką: ludzie z niego nie korzystają, a zarząd wstrzymał dalsze wdrożenie.
+
+Na podstawie dołączonych materiałów projektu napisz „historię porażki” w 7 punktach: co poszło nie tak i dlaczego.
+Dla każdego punktu podaj:
+- przyczynę,
+- wczesny sygnał ostrzegawczy, który był widoczny już w październiku 2026,
+- źródło: nazwę dokumentu i krótki cytat.
+Jeśli punkt nie wynika z materiałów, tylko z ogólnej wiedzy o takich projektach, oznacz go jako [domysł].
+Nie wymyślaj liczb, dat ani osób, których nie ma w materiałach.
+
+Materiały:
+[dołącz lub wklej brief, wymagania HR, Operacji i IT, notatkę z kickoffu oraz swoje notatki z ćwiczenia 01]</code></pre>
+          <div class="code-head"><strong>Prompt krytyczny</strong><button class="button" type="button" data-copy="prompt-premortem-krytyczny" aria-label="Kopiuj prompt krytyczny — Prompt · pre-mortem pilota" hidden>Kopiuj</button></div>
+          <pre tabindex="0" aria-label="Prompt krytyczny — Prompt · pre-mortem pilota"><code id="prompt-premortem-krytyczny">Który z tych punktów jest najmniej prawdopodobny, a który najbardziej niedoceniany? Dla trzech najgroźniejszych zaproponuj jedno działanie zapobiegawcze, które PM może uruchomić w tym tygodniu, i wskaż osobę z materiałów projektu, która powinna je zatwierdzić. Nie przypisuj zadań osobom, których rola tego nie uzasadnia.</code></pre>
+        </div>
+      </details>
+      <details class="disclosure handout">
+        <summary>Dla szybszych · perspektywa interesariusza</summary>
+        <div class="disclosure-body"><p>Powtórz pre-mortem z perspektywy jednej osoby, np. Tomasza Zielińskiego z Operacji albo Katarzyny Wójcik z IT: „Opisz porażkę pilota tak, jak opowiedziałby ją Tomasz po pół roku”. Czym ta historia różni się od wersji PM-a? Którą obawę tej osoby warto poruszyć z nią już teraz?</p></div>
+      </details>
+      <div class="participant-notes">
+  <label for="notatka-premortem">Twoje notatki</label>
+  <p id="pomoc-premortem">Trzy najgroźniejsze przyczyny z sygnałem ostrzegawczym, źródłem i osobą, która powinna zareagować.</p>
+  <textarea id="notatka-premortem" data-workshop-note="premortem" aria-describedby="pomoc-premortem" rows="6"></textarea>
+</div>
+    <div class="notes-backup" hidden>
+        <p role="alert">Notatki nie mogą być zapisywane w tej przeglądarce. Przed przejściem dalej pobierz plik z tym, co wpisano na tej stronie.</p>
+        <button class="button" type="button" id="export-warsztat">Pobierz notatki i materiały · JSON</button>
+        <p id="notes-status" role="status" aria-live="polite"></p>
+      </div>
+    <nav class="pager" aria-label="Nawigacja po warsztacie"><a class="button" href="warsztat-zrodla.html#zrodla">← Weryfikacja źródła</a><a class="button primary" href="warsztat-dashboard.html#dashboard">Test dashboardu →</a></nav>
+    </section>
+  </main>
+</div>
+<p class="copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+</body>
+</html>

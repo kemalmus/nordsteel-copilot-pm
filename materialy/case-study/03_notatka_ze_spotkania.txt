@@ -1,0 +1,36 @@
+NOTATKA ZE SPOTKANIA: Baza wiedzy, status po kickoffie
+Data: 27 października 2026, 10:00–11:10 (Teams + sala 3.12)
+Obecni: Anna Kowalczyk, Marek Nowak, Tomasz Zieliński, Katarzyna Wójcik, PM projektu. Notatkę spisała Ola z sekretariatu COO, więc skróty, sorry.
+
+1. Wybór dostawcy
+Krótka lista: KnowHub + dwie inne firmy. KnowHub prowadzi, bo najlepsze demo i najszybciej odpowiada. Decyzja o wyborze do 30.10 (to nasz M2). PM dopina oferty pozostałych dwóch, żeby było porównanie.
+
+2. Budżet
+Anna: „na wdrożenie coś koło 400 tys. zł, pewnie damy radę". Finanse jeszcze tego nie potwierdziły na piśmie. Licencje to osobny temat, roczny koszt, Finanse mają go policzyć, na razie nie ma na niego żadnej kwoty. Oferta wstępna KnowHub to 38 zł za użytkownika miesięcznie.
+
+3. Zakres pilota
+Pilot: HR + Operacje Gliwice, około 300 osób. Tomasz zgodził się, że Gliwice dadzą na start 3 mistrzów zmian do przeglądu instrukcji. Marek chce, żeby pilot objął materiały onboardingowe.
+
+4. Bezpieczeństwo
+Katarzyna zaznaczyła, że SSO musi być od pierwszego dnia, bez tego nie ma zgody IT. Anna: „no jasne, bezpieczeństwo jest ważne". Marek się nie sprzeciwił. Uzgodniliśmy więc SSO od dnia 1 także dla pilota.
+
+5. SteerCo
+Pierwszy Steering Committee 12 listopada. Anna chce krótką prezentację, 10 minut, bez slajdów technicznych.
+
+6. Różne
+Tomasz pytał o tablety na hali, temat odłożony do spotkania roboczego z IT. Marek przypomniał o zgłoszeniu kalendarza szkoleń do Akademii N (nic nie robimy, tylko informacja).
+
+DECYZJE
+D1. KnowHub jako dostawca wiodący, formalny wybór do 30.10.
+D2. Pilot: HR + Operacje Gliwice (~300 osób).
+D3. SSO od dnia 1, także w pilocie.
+D4. Pierwsze SteerCo: 12.11.2026.
+
+ACTION ITEMS
+A1. PM: zebrać oferty od dwóch pozostałych dostawców. Termin: 29.10.
+A2. Katarzyna Wójcik: przekazać wymagania bezpieczeństwa do zapytania do dostawców. Termin: 28.10.
+A3. Marek Nowak: lista materiałów onboardingowych do pilota. Termin: 6.11.
+A4. Tomasz Zieliński: wskazać 3 mistrzów zmian z Gliwic. Termin: 4.11.
+A5. Anna Kowalczyk: potwierdzić budżet z Finansami. Termin: „w tym tygodniu".
+A6. Skonfigurować SSO po stronie dostawcy i przetestować z Azure AD.
+A7. PM: krótka prezentacja na SteerCo, wersja robocza do Anny. Termin: 9.11.

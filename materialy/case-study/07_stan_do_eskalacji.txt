@@ -1,0 +1,42 @@
+STAN PROJEKTU „BAZA WIEDZY", notatki PM na dzień 10 listopada 2026 (tydzień 6), przed SteerCo 12.11
+(luźny zbiór faktów, z którego trzeba coś zrobić. Kolejność przypadkowa.)
+
+Harmonogram
+- M1 Charter zatwierdzony: zrobione 16.10, zgodnie z planem.
+- M2 Wybór dostawcy: umowa z KnowHub (plan Business) podpisana 3.11, plan był 30.10, więc 4 dni poślizgu. W rejestrze decyzji brakuje osobnego, formalnego zatwierdzenia finalnego wyboru dostawcy — jest tylko wcześniejsze wskazanie KnowHub jako dostawcy wiodącego.
+- M3 Taksonomia i właściciele treści: termin 20.11. Właściciele wskazani dla 3 z 7 kategorii (Onboarding, Operacje i Produkcja, IT i Bezpieczeństwo). Brak dla: HR i Rozwój, BHP, Finanse i Zakupy, Jakość. Warsztat taksonomii wstępnie 12 lub 13.11, czyli w dniu SteerCo albo tuż po.
+- M4 Migracja pilotażowa: termin 15.01.2027. Inwentaryzacja SharePointa: ok. 11 000 plików, IT szacuje, że około 30% to duplikaty. Zespół IT zajęty ERP (~1,5 etatu). IT mówi wprost, że 15.01 jest zagrożone o 3–4 tygodnie.
+- M5 Pilot uruchomiony: 26.02.2027. Zależy od M4. To później niż oczekiwanie sponsora „na początku Q1" z briefu.
+- Postęp ogólny: około 35% według planu. To ręczna ocena PM-a; brak wag i udokumentowanej metody wyliczenia, więc wymaga weryfikacji.
+
+Decyzja o logowaniu (otwarta)
+- 6.11 KnowHub: SSO nie ma w planie Business. Enterprise +18 zł/użytk./mies. dla całych 4 200 kont albo SSO jako osobna integracja, ok. 8 tygodni dodatkowo.
+- 9.11 Anna zdecydowała: pilot z hasłami lokalnymi, SSO w fazie 2. Mail poszedł do mnie, Marka i Tomka. Katarzyny nie było w DW.
+- 10.11 rano Katarzyna dowiedziała się od Marka. Jej mail do mnie: „to wymaga wyjątku od polityki bezpieczeństwa, ja tego nie podpiszę, proszę nie przedstawiać tego jako uzgodnionego". W 02c i na spotkaniu 27.10 uzgodniono SSO od dnia 1.
+- Nie ma wyceny opcji 2 od KnowHub.
+
+Budżet
+- Budżet wdrożenia ustnie „koło 400 tys. zł" (bez licencji), nadal brak potwierdzenia Finansów na piśmie.
+- Licencja: 38 zł/użytk./mies. Pilot 300 osób ≈ 137 tys. zł/rok, pełna skala 4 200 osób ≈ 1,9 mln zł/rok. Żaden budżet tego jeszcze nie pokrywa. Enterprise (+18 zł) nie ujęty w niczym.
+- Pytanie bez odpowiedzi: z czyjego budżetu (IT? Finanse?) idą licencje po pilocie.
+
+Zakres
+- 3.11 Marek poprosił o quizy i certyfikaty z raportami zgodności per pracownik, w LMS Akademia N, „już na starcie". Nikt jeszcze nie odpowiedział. IT: brak budżetu na integracje z LMS.
+
+Adopcja i ludzie
+- Pilot 300 osób, jeszcze nie ruszył. Mistrzowie zmian z Gliwic: 3 osoby wskazane.
+- Tomasz pyta co tydzień, czy „to już będzie w listopadzie".
+- Anna oczekuje na SteerCo „zielonego" statusu.
+
+Ryzyka (robocza lista)
+- R1 Brak właścicieli treści (4 kategorie bez właściciela)
+- R3 Opóźnienie migracji z SharePointa
+- R4 Ograniczenia SSO / bezpieczeństwo po stronie dostawcy
+- R5 Przekroczenie budżetu przez rozszerzenie zakresu
+- R2 Niska adopcja
+- R7 Zgodność RODO: skan dokumentów jeszcze niezrobiony
+
+Odbiorcy statusu do przygotowania
+- Sponsor i SteerCo (Anna + zarząd, 10 minut)
+- Zespół projektu i dyrektorzy działów (Marek, Tomek, Katarzyna)
+- Przyszli użytkownicy pilota (HR, Gliwice), krótka informacja o tym, co się zmienia

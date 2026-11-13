@@ -1,0 +1,25 @@
+NOTATKI PM: pytania do researchu przed wyborem narzędzia i przygotowaniem planu
+(robocze, do wrzucenia do Copilota z dostępem do internetu. Do każdej odpowiedzi wymagam: źródło, rok, link)
+
+1. Narzędzia
+Jakie narzędzia do bazy wiedzy są najczęściej używane w dużych organizacjach przemysłowych i usługowych (Confluence, SharePoint, Notion, Guru, Document360, Bloomfire, KnowHub)? Zrób tabelę: cena za użytkownika, czy w tańszych planach jest SSO (SAML), lokalizacja danych (UE?), wyszukiwarka z AI. Cena i plan mają być aktualne na 2026.
+
+2. Benchmarki
+Ile czasu pracownicy średnio tracą na szukanie informacji? Jakie oszczędności dają wdrożenia baz wiedzy? Potrzebuję 2–3 liczb ze źródłem, żeby wstawić do prezentacji dla Anny. Najlepiej z badań, nie z materiałów sprzedażowych.
+
+3. Taksonomia i governance
+Dobre praktyki: ile poziomów kategorii, kto powinien być właścicielem treści, jak często robić przegląd aktualności, jak oznaczać nieaktualne artykuły. Czy są standardy (ISO?) dotyczące zarządzania wiedzą?
+
+4. Bezpieczeństwo i RODO
+Co RODO mówi o dokumentach z danymi osobowymi w bazie wiedzy? Umowa powierzenia z dostawcą SaaS, transfer danych poza EOG, przechowywanie logów dostępu. Czy są interpretacje UODO lub orzeczenia dotyczące firm, które ujawniły dane w wewnętrznych repozytoriach?
+
+5. Adopcja
+Jakie wskaźniki adopcji bazy wiedzy uznaje się za dobre (aktywni użytkownicy miesięcznie, wyszukiwania zakończone sukcesem)? Ile trwa dojście do 60% aktywności?
+
+6. Dostawca
+Co wiadomo o firmie KnowHub? Referencje, wielkość, opinie klientów, ostatnie aktualizacje produktu.
+
+7. AI w bazie wiedzy
+Czy chatbot AI odpowiadający na pytania pracowników na podstawie naszych procedur podlega jakimś regulacjom (AI Act)? Jakie są ryzyka błędnych odpowiedzi w kontekście instrukcji BHP?
+
+Uwaga do siebie: nie wklejać żadnych realnych danych firmy, tylko opisy ogólne.

@@ -1,0 +1,20 @@
+STATUS PROJEKTU „BAZA WIEDZY NORDSTEEL”, wersja robocza przygotowana przez Copilota
+Stan na: 31 października 2026
+Status ogólny: zielony
+
+Najważniejsze ustalenia
+1. KnowHub został wskazany jako dostawca wiodący. Formalny wybór do 30.10 (kamień milowy M2).
+2. Zgodnie z decyzją z kickoffu pilot obejmie HR, Operacje Gliwice oraz Finanse, łącznie ok. 450 osób.
+3. Budżet wdrożenia w wysokości 400 tys. zł został potwierdzony przez Finanse.
+4. Oferta wstępna KnowHub: 28 zł za użytkownika miesięcznie.
+5. Logowanie przez SSO zostanie dołączone w drugiej fazie, po zakończeniu pilota.
+6. Operacje zaakceptowały harmonogram migracji do kwietnia 2027.
+7. Gliwice wskażą trzech mistrzów zmian do przeglądu instrukcji.
+
+Działania
+- Zebranie ofert od dwóch pozostałych dostawców: PM, do 29.10.
+- Lista materiałów onboardingowych do pilota: Marek Nowak, do 6.11.
+- Konfiguracja i test SSO z Azure AD: Katarzyna Wójcik, do 6.11.
+- Prezentacja na SteerCo 12.11: PM, wersja robocza do Anny do 9.11.
+
+Następny krok: przedstawienie postępów na Steering Committee 12 listopada.

@@ -1,0 +1,18 @@
+Od: Anna Kowalczyk
+Do: PM projektu „Baza wiedzy"
+DW: Marek Nowak, Tomasz Zieliński
+Data: 9 listopada 2026, 21:07
+Temat: Decyzja ws. pilota
+
+Cześć,
+
+rozmawiałam dziś z Piotrem z KnowHub i z Finansami. Enterprise za +18 zł na 4200 osób to jest dla mnie nieakceptowalne w tym momencie, nie po to negocjowaliśmy budżet. Z drugiej strony nie chcę czekać kolejnych 8 tygodni, bo 12-go mam SteerCo i chcę powiedzieć, że idziemy do przodu.
+
+Więc decyzja: pilot startuje na logowaniu lokalnym (hasła) dla HR i Operacji Gliwice. SSO dołączamy w drugiej fazie, po pilocie, jak się okaże, że to się przyjmuje. Pilot to tylko 300 osób, nic się nie stanie.
+
+Prosiłabym, żebyś zaktualizował plan i przygotował krótkie podsumowanie na SteerCo. Marek, Tomek, dacie ludzi do pilota jak ustalaliśmy.
+
+To jest zamknięty temat, proszę nie otwierać dyskusji przed SteerCo, zależy mi na spokojnym przebiegu.
+
+Dzięki,
+Ania

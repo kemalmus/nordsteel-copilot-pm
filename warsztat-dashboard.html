@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ćwiczenia · Copilot w pracy PM-a</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="course.js" defer></script>
+  <script src="warsztat-notatki.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#dashboard" aria-current="page">Przejdź do treści warsztatu</a>
+<header class="course-header">
+  <div class="wrap">
+    <a href="index.html">ArcelorMittal</a>
+    <nav class="header-nav" aria-label="Menu">
+      <a class="header-link" href="index.html#program">Program</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap layout">
+  <nav class="index" aria-labelledby="spis">
+    <h2 id="spis">Ścieżka warsztatu</h2>
+    <ol>
+      <li><a href="warsztat.html#wstep"><span>00</span><span>Wstęp o LLM-ach</span></a></li>
+      <li><a href="warsztat-przygotowanie.html#przygotowanie"><span>00a</span><span>Przygotowanie</span></a></li>
+      <li><a href="warsztat-zakres.html#zakres"><span>01</span><span>Zakres pilota</span></a></li>
+      <li><a href="warsztat-zrodla.html#zrodla"><span>02</span><span>Weryfikacja źródła</span></a></li>
+      <li><a href="warsztat-premortem.html#premortem"><span>03</span><span>Pre-mortem</span></a></li>
+      <li><a href="warsztat-dashboard.html#dashboard"><span>04</span><span>Test dashboardu</span></a></li>
+      <li><a href="warsztat-dlugopis.html#dlugopis"><span>05</span><span>Czerwony długopis</span></a></li>
+      <li><a href="warsztat-dostawca.html#dostawca"><span>06</span><span>Aktualizacja projektu</span></a></li>
+      <li><a href="warsztat-sponsor.html#sponsor"><span>07</span><span>Komunikacja dla sponsora</span></a></li>
+      <li><a href="warsztat-podsumowanie.html#podsumowanie"><span>08</span><span>Podsumowanie</span></a></li>
+    </ol>
+  </nav>
+  <main>
+    <section class="module" id="dashboard" aria-labelledby="dashboard-tytul">
+      <p class="eyebrow">04 · 11:35–11:55 · samodzielnie</p>
+      <h2 id="dashboard-tytul">Przetestuj dashboard projektu</h2>
+      <p class="intro">Dashboard to gotowy prototyp statusu projektu. Sprawdź, czy da się go zaktualizować na podstawie notatki ze spotkania i czy druga osoba odczyta z niego to, co ważne.</p>
+<details class="disclosure case-file" id="warsztat-notatka">
+  <summary>Notatka z kickoffu</summary>
+  <div class="disclosure-body">
+    <div class="actions">
+      <button class="button" type="button" data-copy="warsztat-notatka-tekst" aria-label="Kopiuj treść — Notatka z kickoffu" hidden>Kopiuj treść</button>
+      <a class="button" href="materialy/case-study/03_notatka_ze_spotkania.txt" download>Pobierz TXT</a>
+    </div>
+    <pre tabindex="0" aria-label="Notatka z kickoffu"><code id="warsztat-notatka-tekst">NOTATKA ZE SPOTKANIA: Baza wiedzy, status po kickoffie
+Data: 27 października 2026, 10:00–11:10 (Teams + sala 3.12)
+Obecni: Anna Kowalczyk, Marek Nowak, Tomasz Zieliński, Katarzyna Wójcik, PM projektu. Notatkę spisała Ola z sekretariatu COO, więc skróty, sorry.
+
+1. Wybór dostawcy
+Krótka lista: KnowHub + dwie inne firmy. KnowHub prowadzi, bo najlepsze demo i najszybciej odpowiada. Decyzja o wyborze do 30.10 (to nasz M2). PM dopina oferty pozostałych dwóch, żeby było porównanie.
+
+2. Budżet
+Anna: „na wdrożenie coś koło 400 tys. zł, pewnie damy radę&quot;. Finanse jeszcze tego nie potwierdziły na piśmie. Licencje to osobny temat, roczny koszt, Finanse mają go policzyć, na razie nie ma na niego żadnej kwoty. Oferta wstępna KnowHub to 38 zł za użytkownika miesięcznie.
+
+3. Zakres pilota
+Pilot: HR + Operacje Gliwice, około 300 osób. Tomasz zgodził się, że Gliwice dadzą na start 3 mistrzów zmian do przeglądu instrukcji. Marek chce, żeby pilot objął materiały onboardingowe.
+
+4. Bezpieczeństwo
+Katarzyna zaznaczyła, że SSO musi być od pierwszego dnia, bez tego nie ma zgody IT. Anna: „no jasne, bezpieczeństwo jest ważne&quot;. Marek się nie sprzeciwił. Uzgodniliśmy więc SSO od dnia 1 także dla pilota.
+
+5. SteerCo
+Pierwszy Steering Committee 12 listopada. Anna chce krótką prezentację, 10 minut, bez slajdów technicznych.
+
+6. Różne
+Tomasz pytał o tablety na hali, temat odłożony do spotkania roboczego z IT. Marek przypomniał o zgłoszeniu kalendarza szkoleń do Akademii N (nic nie robimy, tylko informacja).
+
+DECYZJE
+D1. KnowHub jako dostawca wiodący, formalny wybór do 30.10.
+D2. Pilot: HR + Operacje Gliwice (~300 osób).
+D3. SSO od dnia 1, także w pilocie.
+D4. Pierwsze SteerCo: 12.11.2026.
+
+ACTION ITEMS
+A1. PM: zebrać oferty od dwóch pozostałych dostawców. Termin: 29.10.
+A2. Katarzyna Wójcik: przekazać wymagania bezpieczeństwa do zapytania do dostawców. Termin: 28.10.
+A3. Marek Nowak: lista materiałów onboardingowych do pilota. Termin: 6.11.
+A4. Tomasz Zieliński: wskazać 3 mistrzów zmian z Gliwic. Termin: 4.11.
+A5. Anna Kowalczyk: potwierdzić budżet z Finansami. Termin: „w tym tygodniu&quot;.
+A6. Skonfigurować SSO po stronie dostawcy i przetestować z Azure AD.
+A7. PM: krótka prezentacja na SteerCo, wersja robocza do Anny. Termin: 9.11.
+</code></pre>
+  </div>
+</details>
+      <h3>Otwórz dashboard</h3>
+      <div class="actions"><a class="button primary" href="materialy/apps/dashboard_status_baseline.html" target="_blank" rel="noopener">Otwórz dashboard ↗</a><a class="button" href="materialy/apps/dashboard_status_baseline.html" download>Pobierz HTML</a></div>
+      <ol>
+        <li>Napisz polecenie, w którym Copilot wypisze z notatki z kickoffu zadania bez właściciela lub terminu. Porównaj wynik z notatką. Czy Copilot nie dopisał osoby albo daty, których tam nie ma?</li>
+        <li>Dodaj w dashboardzie jedno takie zadanie. W polu, którego brakuje, wpisz „do ustalenia”.</li>
+        <li>Użyj „Zapisz projekt”, otwórz pobraną kopię i sprawdź wpis. Gdy zapis jest zablokowany, odnotuj wynik testu i zapisz aktualizacje w notatkach poniżej.</li>
+        <li>Zrób test „pierwszego spojrzenia”: zamknij plik, otwórz zapisaną kopię i w 30 sekund odpowiedz sobie, co wymaga decyzji, kto za to odpowiada i skąd są dane. Jeśli coś zajęło więcej czasu, zapisz jedną poprawkę.</li>
+      </ol>
+      <details class="disclosure prompt" id="prompt-dashboard-akcje">
+        <summary>Podpowiedź · otwórz, jeśli utkniesz</summary>
+        <div class="disclosure-body">
+          <div class="code-head"><strong>Dołącz notatkę z kickoffu.</strong><button class="button" type="button" data-copy="prompt-dashboard-akcje-tekst" aria-label="Kopiuj prompt — Podpowiedź · zadania bez właściciela" hidden>Kopiuj</button></div>
+          <pre tabindex="0" aria-label="Podpowiedź · zadania bez właściciela"><code id="prompt-dashboard-akcje-tekst">Z dołączonej notatki ze spotkania wypisz wszystkie zadania do wykonania (action items). Dla każdego podaj właściciela i termin dokładnie tak, jak są zapisane w notatce. Jeśli czegoś brakuje albo termin jest nieprecyzyjny, napisz „brak w notatce” lub zacytuj oryginalne sformułowanie. Nie uzupełniaj braków domysłami.</code></pre>
+        </div>
+      </details>
+      <details class="disclosure handout">
+        <summary>Dla szybszych · wygeneruj własny dashboard</summary>
+        <div class="disclosure-body">
+          <p>Zbuduj własną wersję z Copilotem. Wklej notatkę z kickoffu i swoje ustalenia w miejsce oznaczone nawiasami. Działający plik zwykle wymaga 2–3 poprawek. Jeśli nie zdążysz, dokończ po szkoleniu.</p>
+      <details class="disclosure prompt" id="warsztat-dashboard-prompt">
+        <summary>Prompt · dashboard statusu projektu</summary>
+        <div class="disclosure-body">
+          <div class="code-head"><strong>Prompt</strong><button class="button" type="button" data-copy="warsztat-dashboard-prompt-tekst" aria-label="Kopiuj prompt dashboardu" hidden>Kopiuj</button></div>
+          <pre tabindex="0" aria-label="Prompt dashboardu"><code id="warsztat-dashboard-prompt-tekst">Napisz jeden samodzielny plik HTML (czysty HTML5, CSS i JavaScript w środku tego samego pliku, ŻADNYCH bibliotek ani plików zewnętrznych, ma działać po otwarciu z dysku bez internetu) — dashboard statusu projektu „Baza wiedzy Nordsteel&quot;. Poniżej wklejam dane projektu; wpisz je do pliku.
+
+Wymagania:
+- Nagłówek z nazwą projektu, datą i dużym wskaźnikiem statusu (zielony/żółty/czerwony) — kolory jako zmienne CSS.
+- Pasek postępu ogólnego (element progress) oraz oś kamieni milowych z datami i statusem każdego.
+- Liczniki: ryzyka, założenia, problemy, zależności (RAID) — mają się przeliczać z danych w pliku.
+- Top 5 ryzyk (sortowane wg prawdopodobieństwo × wpływ); kliknięcie ryzyka otwiera okno szczegółów (element dialog).
+- Otwarte decyzje oraz tabela działań (opis, właściciel, termin, status: Do zrobienia / W toku / Zrobione), z możliwością dodania wiersza i edycji komórek bezpośrednio w tabeli.
+- Zwijane sekcje (element details). Układ CSS Grid, który nie rozjeżdża się po dodaniu wiersza.
+- Przycisk „💾 Zapisz projekt&quot;: pobiera świeżą kopię tego samego pliku HTML z aktualnymi danymi i moimi edycjami w środku (użyj Blob i atrybutu download). NIE używaj localStorage jako źródła danych.
+- Przycisk „🖨 Drukuj / PDF&quot; oraz reguły @media print dające czysty jednostronicowy status.
+- Duże czcionki (min 16 px, nagłówki min 24 px), wysoki kontrast, czytelne przy udostępnianiu ekranu; działa też na wąskim ekranie.
+- Na górze pliku komentarz: nazwa aplikacji, wersja (baseline), jak zapisać (przycisk Zapisz projekt), jak zaktualizować przez Copilota (wkleić nowe informacje i poprosić o nową wersję pliku).
+- Interfejs po polsku. W interfejsie nie używaj żargonu technicznego. Kod prosty i czytelny, żebym mógł go potem poprosić o zmiany. Oddaj cały plik w jednym pliku html, ktory moge sciagnac.
+
+[wklej swoje wyniki z wcześniejszych etapów oraz notatkę z kickoffu]</code></pre>
+          <div class="code-head"><strong>Prompt krytyczny</strong><button class="button" type="button" data-copy="warsztat-dashboard-krytyczny" aria-label="Kopiuj prompt krytyczny dashboardu" hidden>Kopiuj</button></div>
+          <pre tabindex="0" aria-label="Prompt krytyczny dashboardu"><code id="warsztat-dashboard-krytyczny">Przejrzyj wygenerowany plik jak tester: (1) czy działa bez internetu (żadnych adresów http w kodzie)? (2) czy „Zapisz projekt&quot; zachowuje moje edycje? (3) czy po dodaniu wiersza układ się nie rozjeżdża? (4) czy liczniki RAID zgadzają się z danymi? (5) czy w interfejsie nie ma żargonu technicznego? Wypisz wszystkie błędy i oddaj poprawioną, kompletną wersję pliku.</code></pre>
+        </div>
+      </details>
+        </div>
+      </details>
+      <div class="participant-notes">
+  <label for="notatka-dashboard">Twoje notatki</label>
+  <p id="pomoc-dashboard">Dodane zadanie, czego brakowało w notatce, wynik testu zapisu i jedna poprawka po teście pierwszego spojrzenia.</p>
+  <textarea id="notatka-dashboard" data-workshop-note="dashboard" aria-describedby="pomoc-dashboard" rows="6"></textarea>
+</div>
+    <p class="workshop-break">11:55–12:25 · lunch</p>
+    <div class="notes-backup" hidden>
+        <p role="alert">Notatki nie mogą być zapisywane w tej przeglądarce. Przed przejściem dalej pobierz plik z tym, co wpisano na tej stronie.</p>
+        <button class="button" type="button" id="export-warsztat">Pobierz notatki i materiały · JSON</button>
+        <p id="notes-status" role="status" aria-live="polite"></p>
+      </div>
+    <nav class="pager" aria-label="Nawigacja po warsztacie"><a class="button" href="warsztat-premortem.html#premortem">← Pre-mortem</a><a class="button primary" href="warsztat-dlugopis.html#dlugopis">Czerwony długopis →</a></nav>
+    </section>
+  </main>
+</div>
+<p class="copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+</body>
+</html>

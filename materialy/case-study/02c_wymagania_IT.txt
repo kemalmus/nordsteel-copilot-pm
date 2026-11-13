@@ -1,0 +1,34 @@
+Wymagania IT: Baza wiedzy Nordsteel
+Katarzyna Wójcik, Dyrektor IT
+Dokument 1.0, 12 października 2026
+
+Uwaga wstępna: dokument dotyczy wymagań niefunkcjonalnych i bezpieczeństwa. IT nie jest właścicielem treści ani procesów biznesowych.
+
+1. Uwierzytelnianie i dostęp
+1.1 SSO obowiązkowe od dnia 1, zintegrowane z naszym katalogiem użytkowników (Microsoft Entra ID, dawniej Azure AD). Żadnych kont lokalnych, żadnych haseł zarządzanych przez dostawcę.
+1.2 Dostęp wyłącznie według ról i grup (zasada minimalnych uprawnień). Domyślnie dostęp do treści własnego działu; treści międzydziałowe po zatwierdzeniu właściciela kategorii.
+1.3 Brak dostępu dla osób spoza organizacji, w tym pracowników agencyjnych bez konta domenowego i kandydatów.
+1.4 Dziennik audytowy: kto co wyświetlił i zmienił, przechowywany min. 12 miesięcy.
+1.5 Urządzenia: tylko zarządzane (MDM). Tablety współdzielone na hali wymagają osobnej analizy.
+
+2. Migracja
+2.1 Źródła: SharePoint, dyski sieciowe P: i S:. Szacunkowo kilkanaście tysięcy plików, w tym duplikaty i wersje.
+2.2 Przed migracją skan pod kątem danych osobowych i poufnych (RODO). Dokumenty z danymi osobowymi nie trafiają do bazy bez decyzji właściciela.
+2.3 Realny harmonogram: pół roku od kickoffu, czyli okolice kwietnia 2027. Krócej się nie da bez rezygnacji z czyszczenia danych, a to zwykle kończy się bałaganem w nowym miejscu.
+2.4 Zasoby: w Q4 zespół IT jest zaangażowany we wdrożenie ERP, dostępność to około 1,5 etatu.
+
+3. Integracje
+3.1 IT nie zakłada żadnych integracji z Akademią N (LMS) w zakresie bazowym. Każda integracja wymaga osobnego zlecenia, wyceny i budżetu. Na dziś takiego budżetu w IT nie ma.
+
+4. Dostawca
+4.1 Ocena bezpieczeństwa dostawcy (ankieta, lokalizacja danych, umowa powierzenia) przed podpisaniem umowy.
+4.2 Hosting w UE.
+
+5. Kryteria akceptacji
+Brak incydentów bezpieczeństwa i zgodność z polityką bezpieczeństwa informacji. Wskaźniki użyteczności ustala biznes.
+
+6. Otwarte kwestie
+- Czy migrujemy archiwum sprzed 2019 roku. Nie mamy stanowiska.
+- Kto odpowiada za wygaszanie starych lokalizacji po migracji.
+
+Katarzyna

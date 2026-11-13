@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ćwiczenia · Copilot w pracy PM-a</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="course.js" defer></script>
+  <script src="warsztat-notatki.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#zakres" aria-current="page">Przejdź do treści warsztatu</a>
+<header class="course-header">
+  <div class="wrap">
+    <a href="index.html">ArcelorMittal</a>
+    <nav class="header-nav" aria-label="Menu">
+      <a class="header-link" href="index.html#program">Program</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap layout">
+  <nav class="index" aria-labelledby="spis">
+    <h2 id="spis">Ścieżka warsztatu</h2>
+    <ol>
+      <li><a href="warsztat.html#wstep"><span>00</span><span>Wstęp o LLM-ach</span></a></li>
+      <li><a href="warsztat-przygotowanie.html#przygotowanie"><span>00a</span><span>Przygotowanie</span></a></li>
+      <li><a href="warsztat-zakres.html#zakres"><span>01</span><span>Zakres pilota</span></a></li>
+      <li><a href="warsztat-zrodla.html#zrodla"><span>02</span><span>Weryfikacja źródła</span></a></li>
+      <li><a href="warsztat-premortem.html#premortem"><span>03</span><span>Pre-mortem</span></a></li>
+      <li><a href="warsztat-dashboard.html#dashboard"><span>04</span><span>Test dashboardu</span></a></li>
+      <li><a href="warsztat-dlugopis.html#dlugopis"><span>05</span><span>Czerwony długopis</span></a></li>
+      <li><a href="warsztat-dostawca.html#dostawca"><span>06</span><span>Aktualizacja projektu</span></a></li>
+      <li><a href="warsztat-sponsor.html#sponsor"><span>07</span><span>Komunikacja dla sponsora</span></a></li>
+      <li><a href="warsztat-podsumowanie.html#podsumowanie"><span>08</span><span>Podsumowanie</span></a></li>
+    </ol>
+  </nav>
+  <main>
+    <section class="module" id="zakres" aria-labelledby="zakres-tytul">
+      <p class="eyebrow">01 · 10:15–10:45 · praca w grupach</p>
+      <h2 id="zakres-tytul">Ustal zakres pilota</h2>
+      <p class="intro">Sponsor chce szybkiego pilota. HR, Operacje i IT zgłaszają różne warunki startu. Ustal, co można wpisać do zakresu i co wymaga uzgodnienia.</p>
+<details class="disclosure case-file" id="warsztat-brief">
+  <summary>Brief sponsora</summary>
+  <div class="disclosure-body">
+    <div class="actions">
+      <button class="button" type="button" data-copy="warsztat-brief-tekst" aria-label="Kopiuj treść — Brief sponsora" hidden>Kopiuj treść</button>
+      <a class="button" href="materialy/case-study/01_brief_od_sponsora.txt" download>Pobierz TXT</a>
+    </div>
+    <pre tabindex="0" aria-label="Brief sponsora"><code id="warsztat-brief-tekst">Od: Anna Kowalczyk (COO)
+Do: PM projektu „Baza wiedzy&quot;
+Data: 28 września 2026, 7:52
+Temat: Baza wiedzy!!! (ważne)
+
+Cześć,
+
+piszę szybko, bo za 10 minut jadę do Gliwic, ale musimy wreszcie ruszyć z tą bazą wiedzy. Siedzi mi to w głowie od wakacji, odkąd nowa osoba w Finansach zapytała po raz trzeci o to samo i nikt nie wiedział, gdzie leży aktualna procedura. A my tego mamy pełno: SharePoint, dyski sieciowe, maile, u Krzyśka jakiś Excel z instrukcjami... trzeba to zebrać w jedno miejsce i już.
+
+Chodzi o to, żeby wszyscy w firmie mieli dostęp do wiedzy i żeby było nowocześnie. Myślałam o czymś w stylu wyszukiwarki, takiej jak Google, ale u nas. Może z chatbotem AI? Widziałam demo na konferencji w Katowicach, robi wrażenie. Nie wiem, czy to jest w ogóle potrzebne, ale zarząd by to pokochał.
+
+Trzy rzeczy, które mi się marzą (kolejność przypadkowa):
+- wyszukiwarka + chatbot AI, który odpowiada na pytania pracowników
+- żeby działało też na hali, z telefonu albo tabletu
+- żeby były tam nie tylko procedury, ale też dobre praktyki, FAQ, „jak to się robi u nas&quot;, może jakieś filmiki
+
+Co ważne. Ma być bardzo prosto, tak żeby nikt nie potrzebował szkolenia. Ma być bezpiecznie, wiadomo. I koniecznie każdy pracownik powinien móc sam dodawać i poprawiać treści, bo inaczej to się nie uda, ludzie muszą czuć, że to ich baza. Ale oczywiście wszystko musi być wiarygodne, więc każda treść ma być zaakceptowana przez kogoś, kto się na tym zna, zanim ją ktoś zobaczy.
+
+Co do terminów: chciałabym, żeby na początku Q1 ludzie już z tego korzystali. Ale 12 listopada mamy pierwszy Steering Committee i tam bym chciała pokazać zarządowi coś działającego, żeby zobaczyli, że idziemy do przodu. Nie musi być idealne, ma robić efekt wow.
+
+O pieniądzach jeszcze nie rozmawiałam z Finansami, więc nie będę teraz nic mówić, ale wiadomo, że nie mamy szaleć. Jedna firma (KnowHub) pokazała mi demo i wyglądało spoko, ale nic nie jest przesądzone, choć szkoda by było tracić czas na porównywanie w nieskończoność.
+
+Pogadaj z ludźmi, których to dotyczy, ty wiesz kim. Ja już z kilkoma rozmawiałam i są za. Tylko IT pewnie będzie marudzić, jak zawsze :)
+
+Daj znać, jak to widzisz, i zaproponuj, jak to ugryźć. Potrzebuję od Ciebie planu na początek tygodnia, bo we wtorek rozmawiam z zarządem. Nie wchodź proszę w szczegóły techniczne, od tego są inni.
+
+Dzięki!!
+Ania
+
+Wysłane z telefonu, sorry za literówki
+</code></pre>
+  </div>
+</details>
+<details class="disclosure case-file" id="warsztat-hr">
+  <summary>Wymagania HR</summary>
+  <div class="disclosure-body">
+    <div class="actions">
+      <button class="button" type="button" data-copy="warsztat-hr-tekst" aria-label="Kopiuj treść — Wymagania HR" hidden>Kopiuj treść</button>
+      <a class="button" href="materialy/case-study/02a_wymagania_HR.txt" download>Pobierz TXT</a>
+    </div>
+    <pre tabindex="0" aria-label="Wymagania HR"><code id="warsztat-hr-tekst">WYMAGANIA DZIAŁU HR wobec Bazy wiedzy Nordsteel
+Autor: Marek Nowak, Dyrektor HR
+Wersja robocza 0.3, 8 października 2026
+
+1. Po co nam to
+Najważniejsze dla nas jest onboarding. Dziś nowa osoba dostaje 14 załączników w mailu powitalnym i połowa jest nieaktualna. Baza wiedzy ma to zastąpić. Drugi temat to rozwój: ścieżki kariery, polityki urlopowe, benefity, regulaminy. Ludzie pytają o to codziennie i zespół HR odpowiada w kółko na to samo.
+
+2. Dostęp
+Baza wiedzy ma być otwarta dla wszystkich. Dosłownie wszystkich: pracownicy biurowi, produkcja, agencje pracy tymczasowej, praktykanci, a nawet kandydaci, którzy podpisali ofertę, żeby mogli zapoznać się z materiałami onboardingowymi jeszcze przed pierwszym dniem. Żadnych barier, żadnego logowania do pięciu systemów. Wiedza, która jest zamknięta, nie działa. Jeśli ktoś potrzebuje osobnego hasła albo prośby o dostęp do działu, to już przegraliśmy.
+
+3. Integracje
+Baza wiedzy musi być zintegrowana z naszym systemem szkoleń, czyli Akademia N (LMS). Po przeczytaniu procedury pracownik powinien dostać powiązane szkolenie automatycznie, a HR widzieć, kto co zrobił. Bez tego całość mija się z celem. Rozumiem, że dostawca Akademii N ma jakieś API, ale nie znam szczegółów. Kwestie kosztów integracji do ustalenia, ale wydaje mi się, że to nie będzie duża kwota.
+
+4. Treści
+Treści HR („HR i Rozwój&quot; oraz „Onboarding&quot;) przygotujemy my. Konkretnie to zajmie się tym ktoś z zespołu, jak tylko będziemy mieli chwilę po zamknięciu budżetu rocznego. Materiały już istnieją, wystarczy je przenieść. Część jest tylko w PDF-ach, część na dysku P: w folderze „HR_stare_NIE_RUSZAĆ&quot;.
+
+5. Edycja i zatwierdzanie
+Treści HR zatwierdza HR, nie chcemy żadnych zewnętrznych akceptacji, bo to spowalnia. Pracownicy mogą zgłaszać uwagi, ale zmiany robimy my.
+
+6. Terminy
+Nie ma presji na konkretny dzień. Ważne, żeby zrobić to dobrze i żeby onboarding działał w nowym kształcie mniej więcej w pierwszym kwartale. Pilot w HR jak najbardziej, chętnie będziemy królikiem doświadczalnym.
+
+7. Sukces
+Chcemy, żeby ludzie byli zadowoleni z bazy wiedzy i żeby korzystali z niej chętnie. HR ma mieć mniej pytań.
+
+8. Do rozważenia (nie wiem, czy w tym projekcie)
+- wersja w języku ukraińskim i angielskim dla części pracowników produkcyjnych
+- baza pytań i odpowiedzi „zapytaj HR&quot; z możliwością anonimowego zadawania pytań
+
+Marek
+</code></pre>
+  </div>
+</details>
+<details class="disclosure case-file" id="warsztat-operacje">
+  <summary>Wymagania Operacji</summary>
+  <div class="disclosure-body">
+    <div class="actions">
+      <button class="button" type="button" data-copy="warsztat-operacje-tekst" aria-label="Kopiuj treść — Wymagania Operacji" hidden>Kopiuj treść</button>
+      <a class="button" href="materialy/case-study/02b_wymagania_Operacje.txt" download>Pobierz TXT</a>
+    </div>
+    <pre tabindex="0" aria-label="Wymagania Operacji"><code id="warsztat-operacje-tekst">Wymagania Operacji: Baza wiedzy
+Tomasz Zieliński, Dyrektor Operacji
+9 października 2026, pisane w przerwie między zmianami
+
+Będę konkretny, bo nie mam czasu na tomy.
+
+Co chcemy
+Instrukcje stanowiskowe, standardy pracy, procedury awaryjne i krótkie „jak zrobić X na maszynie Y&quot;. Mamy tego około 1400 dokumentów w PDF-ach i dużo w wersji papierowej przypiętej na hali. Ile z tego jest aktualne, nikt nie wie, ale zakładam, że większość. Migrujemy wszystko.
+
+Kiedy
+Do końca listopada. To daje nam dwa miesiące od kickoffu i to jest realne, jeśli nie będziemy tego komplikować. Dłużej nie ma sensu, bo w grudniu mamy inwentaryzację i przestoje planowe, a od stycznia nikt nie będzie miał głowy do nowych narzędzi. Pilot u nas w Gliwicach, jestem gotowy dać ludzi.
+
+Jak ma działać
+- Dostęp z tabletów na hali. Mamy tam kilka tabletów przy liniach, używanych wspólnie przez całą zmianę. Ludzie nie będą się logować swoim kontem na każdej zmianie, to musi być „kliknij i czytaj&quot;.
+- Wyszukiwanie po nazwie maszyny albo po kodzie. Proste.
+- Mistrzowie zmian mają móc sami poprawiać instrukcje od razu, gdy coś się zmieni w procesie. Nie będziemy czekać tygodnia na czyjeś zatwierdzenie, bo na hali błąd w instrukcji to nie literówka.
+- Wersje instrukcji i informacja, kto ostatni zmieniał.
+
+Kto pilnuje treści
+Mistrzowie zmian oczywiście. Choć oni mają swoje zadania, więc trzeba to jakoś ogarnąć bez zabierania ich z linii. Jeśli ktoś ma pomysł, kto ma to robić na co dzień, to chętnie posłucham.
+
+Sukces
+Żeby ludzie na hali z tego korzystali i żeby było mniej pytań do mistrzów i do jakości. Zobaczymy po pierwszych tygodniach, czy działa.
+
+Jeszcze nie wiem / do ustalenia
+- Czy skanujemy te papierowe instrukcje z hali. Chyba to nie jest temat tego projektu, ale ktoś musi to zrobić, inaczej wszystko będzie niepełne.
+- Czy trzeba dostęp offline, bo na hali w hali C zasięg wifi bywa różny.
+- Co z instrukcjami po niemiecku od dostawcy maszyn.
+
+Reszta to szczegóły dla IT.
+Tomek
+</code></pre>
+  </div>
+</details>
+<details class="disclosure case-file" id="warsztat-it">
+  <summary>Wymagania IT</summary>
+  <div class="disclosure-body">
+    <div class="actions">
+      <button class="button" type="button" data-copy="warsztat-it-tekst" aria-label="Kopiuj treść — Wymagania IT" hidden>Kopiuj treść</button>
+      <a class="button" href="materialy/case-study/02c_wymagania_IT.txt" download>Pobierz TXT</a>
+    </div>
+    <pre tabindex="0" aria-label="Wymagania IT"><code id="warsztat-it-tekst">Wymagania IT: Baza wiedzy Nordsteel
+Katarzyna Wójcik, Dyrektor IT
+Dokument 1.0, 12 października 2026
+
+Uwaga wstępna: dokument dotyczy wymagań niefunkcjonalnych i bezpieczeństwa. IT nie jest właścicielem treści ani procesów biznesowych.
+
+1. Uwierzytelnianie i dostęp
+1.1 SSO obowiązkowe od dnia 1, zintegrowane z naszym katalogiem użytkowników (Microsoft Entra ID, dawniej Azure AD). Żadnych kont lokalnych, żadnych haseł zarządzanych przez dostawcę.
+1.2 Dostęp wyłącznie według ról i grup (zasada minimalnych uprawnień). Domyślnie dostęp do treści własnego działu; treści międzydziałowe po zatwierdzeniu właściciela kategorii.
+1.3 Brak dostępu dla osób spoza organizacji, w tym pracowników agencyjnych bez konta domenowego i kandydatów.
+1.4 Dziennik audytowy: kto co wyświetlił i zmienił, przechowywany min. 12 miesięcy.
+1.5 Urządzenia: tylko zarządzane (MDM). Tablety współdzielone na hali wymagają osobnej analizy.
+
+2. Migracja
+2.1 Źródła: SharePoint, dyski sieciowe P: i S:. Szacunkowo kilkanaście tysięcy plików, w tym duplikaty i wersje.
+2.2 Przed migracją skan pod kątem danych osobowych i poufnych (RODO). Dokumenty z danymi osobowymi nie trafiają do bazy bez decyzji właściciela.
+2.3 Realny harmonogram: pół roku od kickoffu, czyli okolice kwietnia 2027. Krócej się nie da bez rezygnacji z czyszczenia danych, a to zwykle kończy się bałaganem w nowym miejscu.
+2.4 Zasoby: w Q4 zespół IT jest zaangażowany we wdrożenie ERP, dostępność to około 1,5 etatu.
+
+3. Integracje
+3.1 IT nie zakłada żadnych integracji z Akademią N (LMS) w zakresie bazowym. Każda integracja wymaga osobnego zlecenia, wyceny i budżetu. Na dziś takiego budżetu w IT nie ma.
+
+4. Dostawca
+4.1 Ocena bezpieczeństwa dostawcy (ankieta, lokalizacja danych, umowa powierzenia) przed podpisaniem umowy.
+4.2 Hosting w UE.
+
+5. Kryteria akceptacji
+Brak incydentów bezpieczeństwa i zgodność z polityką bezpieczeństwa informacji. Wskaźniki użyteczności ustala biznes.
+
+6. Otwarte kwestie
+- Czy migrujemy archiwum sprzed 2019 roku. Nie mamy stanowiska.
+- Kto odpowiada za wygaszanie starych lokalizacji po migracji.
+
+Katarzyna
+</code></pre>
+  </div>
+</details>
+      <ol>
+        <li>Napisz polecenie, w którym Copilot wypisze braki i sprzeczności w briefie i zaproponuje pięć pytań do sponsorki. Wybierz jedno, które zadałbyś jako pierwsze, i sprawdź w briefie, że brak naprawdę istnieje.</li>
+        <li>Napisz polecenie, w którym Copilot zestawi stanowiska HR, Operacji i IT i wskaże konflikty. Sprawdź przynajmniej jeden konflikt w obu dokumentach źródłowych.</li>
+        <li>W pokoju grupowym (3–4 osoby, 12 min) ustalcie zakres pilota i wskażcie, kto rozstrzyga otwarty konflikt. Rozpiszcie trzy kamienie milowe i jedną zależność, która może opóźnić start. Jedna osoba udostępnia ekran i zapisuje, a po powrocie przedstawia wynik w minutę.</li>
+      </ol>
+      <div class="checkpoint">
+        <strong>Polecenie do zestawienia wymagań powinno:</strong>
+        <ul>
+          <li>wskazać wszystkie cztery dokumenty jako jedyne źródła,</li>
+          <li>prosić o krótki cytat z każdej strony konfliktu,</li>
+          <li>nazwać osobę lub decyzję, która rozstrzyga konflikt,</li>
+          <li>oznaczać kwestie, których dokumenty nie rozstrzygają.</li>
+        </ul>
+      </div>
+      <details class="disclosure prompt">
+        <summary>Podpowiedź · otwórz, jeśli utkniesz</summary>
+        <div class="disclosure-body">
+          <div class="code-head"><strong>Dodaj brief i trzy dokumenty wymagań.</strong><button class="button" type="button" data-copy="prompt-zakres" hidden>Kopiuj</button></div>
+          <pre tabindex="0" aria-label="Podpowiedź do zestawienia wymagań"><code id="prompt-zakres">Porównaj warunki startu pilota w briefie i wymaganiach HR, Operacji i IT. Wskaż konflikty, podaj po jednym krótkim cytacie z każdej strony konfliktu i nazwij decyzję, która pozwoli go rozstrzygnąć. Oznacz kwestie, których dokumenty nie rozstrzygają.</code></pre>
+        </div>
+      </details>
+      <details class="disclosure handout">
+        <summary>Dla szybszych · zakres w trzech kolumnach</summary>
+        <div class="disclosure-body"><p>Poproś Copilota o zakres pilota w trzech kolumnach: <em>w zakresie</em>, <em>poza zakresem</em>, <em>do decyzji</em>, z podaniem źródła każdej pozycji. Porównaj z własną wersją. Którą pozycję z kolumny „poza zakresem” sponsorka najpewniej zakwestionuje i jakim argumentem ją obronisz?</p></div>
+      </details>
+      <div class="participant-notes">
+  <label for="notatka-zakres">Twoje notatki</label>
+  <p id="pomoc-zakres">Cel, zakres, konflikt poparty dwoma źródłami i trzy kamienie milowe.</p>
+  <textarea id="notatka-zakres" data-workshop-note="zakres" aria-describedby="pomoc-zakres" rows="6"></textarea>
+</div>
+    <div class="notes-backup" hidden>
+        <p role="alert">Notatki nie mogą być zapisywane w tej przeglądarce. Przed przejściem dalej pobierz plik z tym, co wpisano na tej stronie.</p>
+        <button class="button" type="button" id="export-warsztat">Pobierz notatki i materiały · JSON</button>
+        <p id="notes-status" role="status" aria-live="polite"></p>
+      </div>
+    <nav class="pager" aria-label="Nawigacja po warsztacie"><a class="button" href="warsztat-przygotowanie.html#przygotowanie">← Przygotowanie</a><a class="button primary" href="warsztat-zrodla.html#zrodla">Weryfikacja źródła →</a></nav>
+    </section>
+  </main>
+</div>
+<p class="copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+</body>
+</html>

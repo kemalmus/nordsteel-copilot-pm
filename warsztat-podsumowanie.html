@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ćwiczenia · Copilot w pracy PM-a</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="course.js" defer></script>
+  <script src="warsztat-notatki.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#podsumowanie" aria-current="page">Przejdź do treści warsztatu</a>
+<header class="course-header">
+  <div class="wrap">
+    <a href="index.html">ArcelorMittal</a>
+    <nav class="header-nav" aria-label="Menu">
+      <a class="header-link" href="index.html#program">Program</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap layout">
+  <nav class="index" aria-labelledby="spis">
+    <h2 id="spis">Ścieżka warsztatu</h2>
+    <ol>
+      <li><a href="warsztat.html#wstep"><span>00</span><span>Wstęp o LLM-ach</span></a></li>
+      <li><a href="warsztat-przygotowanie.html#przygotowanie"><span>00a</span><span>Przygotowanie</span></a></li>
+      <li><a href="warsztat-zakres.html#zakres"><span>01</span><span>Zakres pilota</span></a></li>
+      <li><a href="warsztat-zrodla.html#zrodla"><span>02</span><span>Weryfikacja źródła</span></a></li>
+      <li><a href="warsztat-premortem.html#premortem"><span>03</span><span>Pre-mortem</span></a></li>
+      <li><a href="warsztat-dashboard.html#dashboard"><span>04</span><span>Test dashboardu</span></a></li>
+      <li><a href="warsztat-dlugopis.html#dlugopis"><span>05</span><span>Czerwony długopis</span></a></li>
+      <li><a href="warsztat-dostawca.html#dostawca"><span>06</span><span>Aktualizacja projektu</span></a></li>
+      <li><a href="warsztat-sponsor.html#sponsor"><span>07</span><span>Komunikacja dla sponsora</span></a></li>
+      <li><a href="warsztat-podsumowanie.html#podsumowanie"><span>08</span><span>Podsumowanie</span></a></li>
+    </ol>
+  </nav>
+  <main>
+    <section class="module" id="podsumowanie" aria-labelledby="podsumowanie-tytul">
+      <p class="eyebrow">08 · 14:35–15:00 · podsumowanie</p>
+      <h2 id="podsumowanie-tytul">Podsumowanie warsztatu</h2>
+      <p>Wspólnie wróćmy do rezultatów: zakresu, pre-mortem, dashboardu, aktualizacji po wiadomościach i rozmów przed komitetem. Omówmy, kiedy Copilot pomagał, a kiedy trzeba go było sprawdzić lub poprawić.</p>
+      <h3>Twój asystent PM-a · 15 min</h3>
+      <ol>
+        <li>Skopiuj prompt i odpowiedz na pytania Copilota. Myśl o swojej codziennej pracy, ale nie podawaj danych firmowych ani osobowych.</li>
+        <li>Wklej gotową instrukcję w nowym czacie i przetestuj ją na mailu sponsorki z ćwiczenia 07. Jeśli Twoja konfiguracja Copilota pozwala zapisać stałe instrukcje albo utworzyć agenta, możesz jej tam użyć.</li>
+        <li>Zapisz instrukcję w notatkach poniżej, żeby zabrać ją ze szkolenia.</li>
+      </ol>
+      <details class="disclosure prompt" id="prompt-asystent">
+        <summary>Prompt · stała instrukcja asystenta PM-a</summary>
+        <div class="disclosure-body">
+          <div class="code-head"><strong>Prompt</strong><button class="button" type="button" data-copy="prompt-asystent-tekst" aria-label="Kopiuj prompt — Prompt · stała instrukcja asystenta PM-a" hidden>Kopiuj</button></div>
+          <pre tabindex="0" aria-label="Prompt · stała instrukcja asystenta PM-a"><code id="prompt-asystent-tekst">Pomóż mi przygotować stałą instrukcję dla Copilota, której będę używać w pracy kierownika projektu.
+Zadaj mi maksymalnie 6 pytań, po jednym naraz, o:
+- zadania, w których najczęściej potrzebuję pomocy,
+- odbiorców moich komunikatów i preferowany format statusu,
+- zasady sprawdzania źródeł i oznaczania niepewnych informacji,
+- to, czego asystent nie może robić ani przesądzać bez mojej decyzji.
+Po ostatniej odpowiedzi oddaj instrukcję do skopiowania, maksymalnie 1500 znaków, w układzie: rola, typowe zadania, format odpowiedzi, zasady sprawdzania źródeł, granice. Nie dopisuj zasad, których nie potwierdziłem.</code></pre>
+        </div>
+      </details>
+      <div class="participant-notes">
+        <label for="notatka-podsumowanie">Twoje notatki</label>
+        <p id="pomoc-podsumowanie">Twoja instrukcja dla asystenta PM-a i jeden wniosek z dnia.</p>
+        <textarea id="notatka-podsumowanie" data-workshop-note="podsumowanie" aria-describedby="pomoc-podsumowanie" rows="8"></textarea>
+      </div>
+      <div class="export-section">
+        <h3>Eksport materiałów i notatek</h3>
+        <p>Pobierz jeden plik JSON. Zawiera zapisane notatki oraz materiały kursu, w tym prompty i załączniki. Pobierz także osobno swoją zapisaną kopię dashboardu, jeśli ją edytujesz.</p>
+        <button class="button primary" type="button" id="export-warsztat">Pobierz materiały i notatki · JSON</button>
+        <p id="notes-status" role="status" aria-live="polite"></p>
+        <h3>Jak otworzyć materiały w osobnej stronie</h3>
+        <ol>
+          <li>Skopiuj poniższy prompt do Copilota i dołącz pobrany plik JSON. Jeśli załączanie nie jest dostępne, otwórz JSON w edytorze tekstu i wklej jego treść, o ile mieści się w rozmowie.</li>
+          <li>Poproś o kompletny kod, zapisz go jako plik <code>moje-materialy.html</code> i otwórz w przeglądarce.</li>
+          <li>Wybierz pobrany plik JSON w wygenerowanej stronie i sprawdź, czy widzisz swoje notatki, prompty oraz materiały.</li>
+        </ol>
+        <div class="code-head"><strong>Prompt do Copilota</strong><button class="button" type="button" data-copy="prompt-eksport" hidden>Kopiuj prompt</button></div>
+        <pre tabindex="0" aria-label="Prompt do Copilota"><code id="prompt-eksport">Przygotuj jeden kompletny plik HTML z CSS i JavaScriptem, który działa lokalnie bez internetu. Ma umożliwiać wybranie pliku JSON wyeksportowanego ze szkolenia, a następnie wyświetlać moje notatki i materiały pogrupowane według nazw. Dane JSON mają pola: wersja, utworzono, notatki oraz materialy. Każdy materiał zawiera sciezka, typ, kodowanie i zawartosc. Tekst ma kodowanie „utf-8”, a pliki binarne „base64”.
+
+Pokaż notatki jako czytelny tekst. Dla materiałów tekstowych umożliwiaj odczyt i kopiowanie, a dla wszystkich materiałów pobranie oryginalnego pliku z właściwą nazwą i typem. Zamieniaj base64 na pliki binarne. Wyświetlaj treści jako tekst, bez wykonywania kodu z importowanego pliku. Nie wysyłaj danych do sieci. Obsłuż błędny lub nieobsługiwany plik z czytelnym komunikatem. Interfejs przygotuj po polsku, z obsługą klawiatury.
+
+Oddaj cały kod w jednym bloku oraz krótką instrukcję zapisania pliku HTML i zaimportowania JSON.</code></pre>
+      </div>
+    <nav class="pager" aria-label="Nawigacja po warsztacie"><a class="button" href="warsztat-sponsor.html#sponsor">← Komunikacja dla sponsora</a><a class="button primary" href="index.html">Wróć do programu →</a></nav>
+    </section>
+  </main>
+</div>
+<p class="copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+</body>
+</html>

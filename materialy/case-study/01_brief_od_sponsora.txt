@@ -1,0 +1,30 @@
+Od: Anna Kowalczyk (COO)
+Do: PM projektu „Baza wiedzy"
+Data: 28 września 2026, 7:52
+Temat: Baza wiedzy!!! (ważne)
+
+Cześć,
+
+piszę szybko, bo za 10 minut jadę do Gliwic, ale musimy wreszcie ruszyć z tą bazą wiedzy. Siedzi mi to w głowie od wakacji, odkąd nowa osoba w Finansach zapytała po raz trzeci o to samo i nikt nie wiedział, gdzie leży aktualna procedura. A my tego mamy pełno: SharePoint, dyski sieciowe, maile, u Krzyśka jakiś Excel z instrukcjami... trzeba to zebrać w jedno miejsce i już.
+
+Chodzi o to, żeby wszyscy w firmie mieli dostęp do wiedzy i żeby było nowocześnie. Myślałam o czymś w stylu wyszukiwarki, takiej jak Google, ale u nas. Może z chatbotem AI? Widziałam demo na konferencji w Katowicach, robi wrażenie. Nie wiem, czy to jest w ogóle potrzebne, ale zarząd by to pokochał.
+
+Trzy rzeczy, które mi się marzą (kolejność przypadkowa):
+- wyszukiwarka + chatbot AI, który odpowiada na pytania pracowników
+- żeby działało też na hali, z telefonu albo tabletu
+- żeby były tam nie tylko procedury, ale też dobre praktyki, FAQ, „jak to się robi u nas", może jakieś filmiki
+
+Co ważne. Ma być bardzo prosto, tak żeby nikt nie potrzebował szkolenia. Ma być bezpiecznie, wiadomo. I koniecznie każdy pracownik powinien móc sam dodawać i poprawiać treści, bo inaczej to się nie uda, ludzie muszą czuć, że to ich baza. Ale oczywiście wszystko musi być wiarygodne, więc każda treść ma być zaakceptowana przez kogoś, kto się na tym zna, zanim ją ktoś zobaczy.
+
+Co do terminów: chciałabym, żeby na początku Q1 ludzie już z tego korzystali. Ale 12 listopada mamy pierwszy Steering Committee i tam bym chciała pokazać zarządowi coś działającego, żeby zobaczyli, że idziemy do przodu. Nie musi być idealne, ma robić efekt wow.
+
+O pieniądzach jeszcze nie rozmawiałam z Finansami, więc nie będę teraz nic mówić, ale wiadomo, że nie mamy szaleć. Jedna firma (KnowHub) pokazała mi demo i wyglądało spoko, ale nic nie jest przesądzone, choć szkoda by było tracić czas na porównywanie w nieskończoność.
+
+Pogadaj z ludźmi, których to dotyczy, ty wiesz kim. Ja już z kilkoma rozmawiałam i są za. Tylko IT pewnie będzie marudzić, jak zawsze :)
+
+Daj znać, jak to widzisz, i zaproponuj, jak to ugryźć. Potrzebuję od Ciebie planu na początek tygodnia, bo we wtorek rozmawiam z zarządem. Nie wchodź proszę w szczegóły techniczne, od tego są inni.
+
+Dzięki!!
+Ania
+
+Wysłane z telefonu, sorry za literówki

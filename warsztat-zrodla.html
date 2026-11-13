@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ćwiczenia · Copilot w pracy PM-a</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="course.js" defer></script>
+  <script src="warsztat-notatki.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#zrodla" aria-current="page">Przejdź do treści warsztatu</a>
+<header class="course-header">
+  <div class="wrap">
+    <a href="index.html">ArcelorMittal</a>
+    <nav class="header-nav" aria-label="Menu">
+      <a class="header-link" href="index.html#program">Program</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap layout">
+  <nav class="index" aria-labelledby="spis">
+    <h2 id="spis">Ścieżka warsztatu</h2>
+    <ol>
+      <li><a href="warsztat.html#wstep"><span>00</span><span>Wstęp o LLM-ach</span></a></li>
+      <li><a href="warsztat-przygotowanie.html#przygotowanie"><span>00a</span><span>Przygotowanie</span></a></li>
+      <li><a href="warsztat-zakres.html#zakres"><span>01</span><span>Zakres pilota</span></a></li>
+      <li><a href="warsztat-zrodla.html#zrodla"><span>02</span><span>Weryfikacja źródła</span></a></li>
+      <li><a href="warsztat-premortem.html#premortem"><span>03</span><span>Pre-mortem</span></a></li>
+      <li><a href="warsztat-dashboard.html#dashboard"><span>04</span><span>Test dashboardu</span></a></li>
+      <li><a href="warsztat-dlugopis.html#dlugopis"><span>05</span><span>Czerwony długopis</span></a></li>
+      <li><a href="warsztat-dostawca.html#dostawca"><span>06</span><span>Aktualizacja projektu</span></a></li>
+      <li><a href="warsztat-sponsor.html#sponsor"><span>07</span><span>Komunikacja dla sponsora</span></a></li>
+      <li><a href="warsztat-podsumowanie.html#podsumowanie"><span>08</span><span>Podsumowanie</span></a></li>
+    </ol>
+  </nav>
+  <main>
+    <section class="module" id="zrodla" aria-labelledby="zrodla-tytul">
+      <p class="eyebrow">02 · 10:45–11:05 · samodzielnie</p>
+      <h2 id="zrodla-tytul">Sprawdź źródło</h2>
+      <p class="intro">IT wymaga logowania firmowego od pierwszego dnia. Ustal, jakie informacje trzeba uzyskać od dostawcy, żeby przygotować konfigurację SSO z Microsoft Entra ID.</p>
+      <ol>
+        <li>Napisz polecenie dla Copilota z wyszukiwaniem w sieci. Ma ustalić, jakie informacje od dostawcy są potrzebne do konfiguracji SSO z Microsoft Entra ID, i wskazać dokumentację producenta.</li>
+        <li>Otwórz jeden odnośnik i znajdź fragment potwierdzający konkretny element konfiguracji. Jeśli wyszukiwanie jest niedostępne, otwórz poniższe źródło i zadaj pytanie na podstawie wybranego fragmentu.</li>
+        <li>Sprawdź, czy wskazany fragment naprawdę uzasadnia wniosek, czy tylko dotyczy tego samego tematu. Wklej na czat spotkania link i jedno zdanie, czego dowodzi. Zapisz, co IT lub dostawca musi jeszcze potwierdzić.</li>
+      </ol>
+      <div class="checkpoint">
+        <strong>Polecenie powinno:</strong>
+        <ul>
+          <li>prosić o oficjalną dokumentację producenta, a nie o blogi i fora,</li>
+          <li>wymagać linku do konkretnej strony przy każdym twierdzeniu,</li>
+          <li>oddawać wynik jako listę pytań do dostawcy i IT.</li>
+        </ul>
+      </div>
+      <a class="button" href="https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal-setup-sso" target="_blank" rel="noopener">Dokumentacja Microsoft Learn ↗</a>
+      <details class="disclosure handout">
+        <summary>Dla szybszych · z wyszukiwaniem i bez</summary>
+        <div class="disclosure-body"><p>Zadaj to samo pytanie w nowym czacie bez wyszukiwania w sieci, jeśli możesz je wyłączyć, albo poproś o odpowiedź „wyłącznie z wiedzy modelu, bez źródeł”. Porównaj obie odpowiedzi. Co zmieniło się w szczegółach, pewności tonu i możliwości sprawdzenia?</p></div>
+      </details>
+      <div class="participant-notes">
+  <label for="notatka-zrodla">Twoje notatki</label>
+  <p id="pomoc-zrodla">Jeden fakt z linkiem i jedno pytanie do IT lub dostawcy.</p>
+  <textarea id="notatka-zrodla" data-workshop-note="zrodla" aria-describedby="pomoc-zrodla" rows="6"></textarea>
+</div>
+    <p class="workshop-break">11:05–11:15 · przerwa</p>
+    <div class="notes-backup" hidden>
+        <p role="alert">Notatki nie mogą być zapisywane w tej przeglądarce. Przed przejściem dalej pobierz plik z tym, co wpisano na tej stronie.</p>
+        <button class="button" type="button" id="export-warsztat">Pobierz notatki i materiały · JSON</button>
+        <p id="notes-status" role="status" aria-live="polite"></p>
+      </div>
+    <nav class="pager" aria-label="Nawigacja po warsztacie"><a class="button" href="warsztat-zakres.html#zakres">← Zakres pilota</a><a class="button primary" href="warsztat-premortem.html#premortem">Pre-mortem →</a></nav>
+    </section>
+  </main>
+</div>
+<p class="copy-status" role="status" aria-live="polite" aria-atomic="true"></p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+WYMAGANIA DZIAŁU HR wobec Bazy wiedzy Nordsteel
+Autor: Marek Nowak, Dyrektor HR
+Wersja robocza 0.3, 8 października 2026
+
+1. Po co nam to
+Najważniejsze dla nas jest onboarding. Dziś nowa osoba dostaje 14 załączników w mailu powitalnym i połowa jest nieaktualna. Baza wiedzy ma to zastąpić. Drugi temat to rozwój: ścieżki kariery, polityki urlopowe, benefity, regulaminy. Ludzie pytają o to codziennie i zespół HR odpowiada w kółko na to samo.
+
+2. Dostęp
+Baza wiedzy ma być otwarta dla wszystkich. Dosłownie wszystkich: pracownicy biurowi, produkcja, agencje pracy tymczasowej, praktykanci, a nawet kandydaci, którzy podpisali ofertę, żeby mogli zapoznać się z materiałami onboardingowymi jeszcze przed pierwszym dniem. Żadnych barier, żadnego logowania do pięciu systemów. Wiedza, która jest zamknięta, nie działa. Jeśli ktoś potrzebuje osobnego hasła albo prośby o dostęp do działu, to już przegraliśmy.
+
+3. Integracje
+Baza wiedzy musi być zintegrowana z naszym systemem szkoleń, czyli Akademia N (LMS). Po przeczytaniu procedury pracownik powinien dostać powiązane szkolenie automatycznie, a HR widzieć, kto co zrobił. Bez tego całość mija się z celem. Rozumiem, że dostawca Akademii N ma jakieś API, ale nie znam szczegółów. Kwestie kosztów integracji do ustalenia, ale wydaje mi się, że to nie będzie duża kwota.
+
+4. Treści
+Treści HR („HR i Rozwój" oraz „Onboarding") przygotujemy my. Konkretnie to zajmie się tym ktoś z zespołu, jak tylko będziemy mieli chwilę po zamknięciu budżetu rocznego. Materiały już istnieją, wystarczy je przenieść. Część jest tylko w PDF-ach, część na dysku P: w folderze „HR_stare_NIE_RUSZAĆ".
+
+5. Edycja i zatwierdzanie
+Treści HR zatwierdza HR, nie chcemy żadnych zewnętrznych akceptacji, bo to spowalnia. Pracownicy mogą zgłaszać uwagi, ale zmiany robimy my.
+
+6. Terminy
+Nie ma presji na konkretny dzień. Ważne, żeby zrobić to dobrze i żeby onboarding działał w nowym kształcie mniej więcej w pierwszym kwartale. Pilot w HR jak najbardziej, chętnie będziemy królikiem doświadczalnym.
+
+7. Sukces
+Chcemy, żeby ludzie byli zadowoleni z bazy wiedzy i żeby korzystali z niej chętnie. HR ma mieć mniej pytań.
+
+8. Do rozważenia (nie wiem, czy w tym projekcie)
+- wersja w języku ukraińskim i angielskim dla części pracowników produkcyjnych
+- baza pytań i odpowiedzi „zapytaj HR" z możliwością anonimowego zadawania pytań
+
+Marek
